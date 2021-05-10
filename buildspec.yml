@@ -4,9 +4,9 @@ phases:
   install:
     commands:
         - curl -O https://bootstrap.pypa.io/get-pip.py
-        - sudo apt update
-        - sudo apt upgrade
-        - sudo apt install python3
+        - sudo apt update -y
+        - sudo apt upgrade -y
+        - sudo apt install python3 -y
         - python3 --version
         - python --version
         - python3 get-pip.py --user
