@@ -4,6 +4,8 @@ phases:
   install:
     commands:
         - curl -O https://bootstrap.pypa.io/get-pip.py
+        - python3 --version
+        - python --version
         - python3 get-pip.py --user
         - pip --version
         - pip3 --version
