@@ -3,10 +3,11 @@ version: 0.2
 phases:
   install:
     commands:
-        - sudo yum update -y
-        - sudo yum remove python3 -y
-        - sudo yum install python3 -y
-        - sudo yum install python3-pip
+        - sudo apt update -y
+        - sudo apt remove python3 -y
+        - sudo apt install python3 -y
+        - sudo apt install python3-pip -y
+        - pip -V
         - pip3 -V
         - python3 -m pip3 install Flask
   build:
